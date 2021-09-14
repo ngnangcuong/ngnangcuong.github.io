@@ -8,6 +8,7 @@
     .hide-on-tablet-mobile {
         display: none;
     }
+    
     /* Header */
     .header {
         background-color: var(--primary-color);
@@ -162,7 +163,7 @@
     }
     .modal__body {
         width: 90%;
-        height: 55%;
+        height: 400px;
     }
     .modal__options {
         height: 12%;

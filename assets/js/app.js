@@ -8,7 +8,6 @@ const backToTopBtn = document.querySelector('.back-to-top');
 window.onscroll = function(e) {
     headerBlock.classList.toggle('header--fixed', window.scrollY > 750);
 
-    console.log(window.scrollY)
     // Switch down when scroll
     if(window.scrollY > 350) {
         headerMenuSlideBar.style.right = '-30vw';
@@ -69,45 +68,49 @@ headerSearchOverlay.onclick = function(e) {
 
 // Slider bot
 $('.slider-bot').slick({
+    slidesToShow: 5,
     slidesToScroll: 1,
-    infinite: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     touchThreshold: 10,
     responsive: [
         {
             breakpoint: 2600,
             settings: {
+                slidesToScroll: 1,
                 slidesToShow: 5,
             }
         },
         {
             breakpoint: 1300,
             settings: {
+                slidesToScroll: 1,
                 slidesToShow: 4,
             }
         },
         {
             breakpoint: 1100,
             settings: {
+                slidesToScroll: 1,
                 slidesToShow: 3,
             }
         },
         {
             breakpoint: 779,
             settings: {
+                slidesToScroll: 1,
                 slidesToShow: 2,
             }
         },
         {
             breakpoint: 740,
             settings: {
+                slidesToScroll: 1,
                 slidesToShow: 1,
             }
         }
-        
     ]
 });
 
