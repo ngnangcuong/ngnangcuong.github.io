@@ -1,0 +1,206 @@
+/* Tablet and Moblie */
+@media (max-width: 1024px) {
+    :root {
+        --padding-header: 10%;
+        --header-height: 10vh; 
+        --page-height: 4vh;
+    }
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+    /* Header */
+    .header {
+        background-color: var(--primary-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 var(--padding-header);
+    }
+    .header.header--fixed {
+        animation: none;
+    }
+    .logo {
+        height: 80%;
+        width: fit-content;
+    }
+    .user ion-icon, .tablet-mobile-menu ion-icon{
+        font-size: 24px ;
+        color: #fff;
+        transform: translateY(-0%);
+    }
+    .navigation.active {
+        height: 28vh;
+    }
+    .navigation {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        /* flex-direction: column; */
+        background-color: #fff;
+        overflow-y: auto;
+        height: 0;
+        padding: 0 var(--padding-header);
+        transition: 0.5s;
+        display: block;
+    }
+    .page {
+        height: var(--page-height);
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .page:hover {
+        height: unset;
+    }
+    .page__cover {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page__cover:hover ion-icon:first-of-type {
+        visibility: hidden;
+    }
+    .page__cover ion-icon:last-child {
+        display: none;
+    }
+    .page__cover:hover ion-icon:last-child {
+        display: block;
+    }
+    .page__item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .page__name {
+        line-height: var(--page-height);
+    }
+    .page__cover > ion-icon {
+        float: right;
+    }
+    .page__list {
+        padding: 0 0 0 5%;
+        width: 100%;
+    }
+    /* Slider top */
+    .slider {
+        margin-top: var(--header-height) ;
+    }
+    .slider-top {
+        padding: 0 2%;
+        animation: none;
+    }
+    .introduce__heading {
+        font-size: 9vw;
+    }
+    /* Introduce Slider */
+    .top-reviews__person {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-reviews__person-rate {
+        text-align: center;
+    }
+    .top-reviews__people .slick-dots {
+        bottom: -164px;
+    }
+    
+    
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .slider-top__writting-cache {
+        font-size: 32px;
+    }
+    .slider-top__writting-main {
+        font-size: 40px;
+    }
+    .slider-top__writting-desc {
+        font-size: 12px;
+    }
+    .top-reviews__heading {
+        font-size: 35px;
+    }
+
+    /* Services */
+    .services__header-cache {
+        font-size: 32px;
+    }
+    .services__header-main {
+        font-size: 40px;
+    }
+
+    /* Founders */
+    .founders__member:hover .founders__member-info {
+        bottom: 171.2px;
+    }
+    /* Achievement */
+    .achievement.grid {
+        top: -171.2px;
+    }
+    .selections__choosen {
+        margin-left: 0;
+        margin-right: 0;
+        width: 300px;
+        height: 300px;
+    }
+    .selections__header-cache {
+        font-size: 32px;
+    }
+    .selections__header-main {
+        font-size: 40px;
+    }
+    .footer {
+        padding: 100px 40px;
+    }
+    .modal__body {
+        width: 90%;
+        height: 55%;
+    }
+    .modal__options {
+        height: 12%;
+    }
+    .modal__inner {
+        height: 88%;
+    }
+}
+
+/* PC */
+@media (min-width: 1113px) {
+    .hide-on-pc {
+        display: none;
+    }
+    .navigation .page {
+        height: 100%;
+        width: 130px;
+    }
+    .slider-top {
+        background-position: center;
+    }
+    .services__header {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
+    /* Founders */
+    .founders__member:hover .founders__member-info {
+        bottom: 171.2px;
+    }
+
+    /* Achievement */
+    .achievement.grid {
+        top: -171.2px;
+    }
+
+    .selections__header {
+        padding: 0 30%;
+    }
+}   
